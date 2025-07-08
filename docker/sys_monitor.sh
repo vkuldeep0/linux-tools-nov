@@ -3,7 +3,9 @@
 DATE="$(date +%Y-%m-%d_%H-%M-%S)"
 
 #OUTFILE
-LOGFILE="syslog_$DATE.txt"
+LOGFILE="/logs/syslog_$DATE.txt"
+
+mkdir -p /logs
 
 #collect system info
 echo "===System Stats for $DATE ===" >> $LOGFILE
@@ -23,4 +25,4 @@ df -h >> $LOGFILE
 echo "Top 5 Processes:" >> $LOGFILE
 ps -eo pid,ppid,cmd,%mem,%cpu --sort=%mem | head -6 >> $LOGFILE
 
-echo "System Monitoring Report Saved To $LOGILE"
+echo "Log Written to $LOGFILE"
