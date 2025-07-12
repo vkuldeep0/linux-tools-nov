@@ -1,0 +1,17 @@
+== System Stats (2025-07-12_08-05-44) ==
+ 08:05:44 up  2:01,  0 users,  load average: 0.07, 0.04, 0.05
+
+              total        used        free      shared  buff/cache   available
+Mem:          2.7Gi       940Mi       374Mi        32Mi       1.4Gi       1.6Gi
+Swap:            0B          0B          0B
+
+Filesystem      Size  Used Avail Use% Mounted on
+overlay          20G  9.1G  9.5G  49% /
+tmpfs            64M     0   64M   0% /dev
+shm              64M     0   64M   0% /dev/shm
+/dev/sda2        20G  9.1G  9.5G  49% /logs
+tmpfs           1.4G     0  1.4G   0% /proc/asound
+tmpfs           1.4G     0  1.4G   0% /proc/acpi
+tmpfs           1.4G     0  1.4G   0% /proc/scsi
+tmpfs           1.4G     0  1.4G   0% /sys/firmware
+tmpfs           1.4G     0  1.4G   0% /sys/devices/virtual/powercap

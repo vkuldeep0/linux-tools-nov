@@ -1,0 +1,11 @@
+FROM ubuntu:20.04
+
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt update && apt install -y procps coreutils
+
+COPY sys_logger.sh /usr/local/bin/sys_logger.sh
+
+RUN chmod +x /usr/local/bin/sys_logger.sh
+
+CMD ["/usr/local/bin/sys_logger.sh"]
